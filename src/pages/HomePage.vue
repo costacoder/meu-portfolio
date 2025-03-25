@@ -66,7 +66,6 @@
 </template>
 
 <script>
-import teste2 from "@/assets/teste2.png"
 import logo from '@/assets/logo.png'  
 
 export default {
@@ -83,20 +82,17 @@ export default {
         {
           id: "na-obra",
           title: "na Obra",
-          description: "Aplicativo para medição de obras.",
-          image: teste2,
+          description: "Aplicativo para medição de obras.",          
         },
         {
           id: "listinha",
           title: "Listinha",
-          description: "Lista de mercado, conectado ao realtime database.",
-          image: teste2,
+          description: "Lista de mercado, conectado ao realtime database.",          
         },
         {
           id: "formulador",
           title: "Formulador",
-          description: "Aplicativo para gerar fórmulas e auxiliar nas produções.",
-          image: teste2,
+          description: "Aplicativo para gerar fórmulas e auxiliar nas produções.",          
         },
       ],
     };
