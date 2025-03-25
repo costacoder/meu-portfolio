@@ -4,11 +4,10 @@ import vuetify from 'vite-plugin-vuetify'
 
 const path = require('path')
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  base: '/meu-portfolio/',
   plugins: [
     vue(),
-    // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
     vuetify({
       autoImport: true,
     }),
@@ -20,7 +19,7 @@ export default defineConfig({
     },    
   },
   server: {
-    host: true, // ou '0.0.0.0' para expor pra rede
+    host: true,
     port: 5173,
   },
 })
