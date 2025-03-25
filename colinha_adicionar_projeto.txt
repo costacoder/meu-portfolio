@@ -1,0 +1,50 @@
+
+📝 COLINHA – Como adicionar ou editar projetos no portfólio Vue + Vuetify
+(Data: 20/03/2025)
+
+📂 Onde editar:
+Arquivo: ProjectDetail.vue
+Local: Dentro do created() → array 'projects'
+
+➕ Para adicionar um novo projeto:
+{
+  id: "novo-projeto", // deve ser único, usado na URL
+  title: "Nome do Projeto",
+  images: [img1, img2], // importar as imagens no topo do arquivo e inserir aqui
+  description: `Texto descritivo sobre o projeto.`,
+  features: [
+    "Funcionalidade 1",
+    "Funcionalidade 2"
+  ],
+  tech: ["Tecnologia A", "Tecnologia B"],
+  link: "https://link-do-projeto.com"
+}
+
+🖼️ Importar imagens no início do <script>:
+import novaImagem1 from '@/assets/novaImagem1.png'
+import novaImagem2 from '@/assets/novaImagem2.png'
+
+⚙ Exemplo completo:
+{
+  id: "catalogo-digital",
+  title: "Catálogo Digital",
+  images: [novaImagem1, novaImagem2],
+  description: `App para visualização de produtos com filtros e links diretos para compra.`,
+  features: [
+    "Filtro por categorias",
+    "Interface amigável",
+    "Links diretos para WhatsApp"
+  ],
+  tech: ["Vue.js", "Vuetify", "JavaScript"],
+  link: "https://exemplo.com/catalogo-digital"
+}
+
+🌐 Como acessar um projeto na prática:
+A URL será:
+http://localhost:5173/projects/catalogo-digital
+(substitua 'catalogo-digital' pelo id definido)
+
+✅ Recapitulando:
+- Basta adicionar novo item no array 'projects'
+- Importe imagens no <script>
+- Não precisa mexer na tela do carrossel nem no layout: já está automático

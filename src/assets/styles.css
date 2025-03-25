@@ -1,0 +1,45 @@
+.v-application {
+  background-color: #f4f5fa !important;
+}
+
+.primary-color {
+color: #737373;
+}
+
+.secondary-color {
+color: #5e73d6;
+}
+
+.background-color {
+background-color: #f4f5fa;
+}
+
+.card-background {
+background-color: #ffffff;
+}
+
+/* Definir Poppins como fonte padrão para todo o site */
+* {
+  font-family: 'Poppins', sans-serif !important; /* !important garante que sobrescreva outros estilos */
+}
+
+/* Ajustes específicos para elementos comuns */
+body {
+  font-weight: 400; /* Peso padrão da fonte */
+  line-height: 1.6; /* Altura da linha para melhor legibilidade */ 
+}
+
+/* Ajustes para títulos (opcional, se quiser manter estilos específicos) */
+h1, h2, h3, h4, h5, h6,
+.text-h1, .text-h2, .text-h3, .text-h4, .text-h5, .text-h6 {
+  font-weight: 600; /* Peso mais forte para títulos */
+  line-height: 1.2; /* Altura da linha menor para títulos */
+  margin-bottom: 0.5em; /* Espaçamento abaixo dos títulos */
+}
+
+/* Ajustes para parágrafos */
+p {
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1em; /* Espaçamento abaixo dos parágrafos */
+}
